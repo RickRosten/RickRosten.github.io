@@ -1,14 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   you see meeee I worrrrrkkkk 
-   asdasd
-   dasda
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+      <title>оТебе</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="image">
+            <header>
+               <div class="header-left">
+                  <div class="logo-text">
+                     <img src="images/logo.png" alt="">
+                     <div>WHO AM I?</div>
+                  </div>
+               </div>
+               <div class="audio">
+                  <audio controls="controls" preload="auto" class="audio-js" loop="true">
+                     <!-- <source src="track.ogg" type="audio/ogg" /> -->
+                     <source src="audio.mp3" type="audio/mpeg" />
+                     Your browser does not support the audio element.
+                  </audio>
+               </div>
+               <div class="audio-button">
+                  <img src="images/mute.svg" alt="" class="js-audio-logo">
+               </div>
+               <div class="header-menu">
+                  <a href="#" class="header-link">
+                     <p>Обо мне</p>
+                  </a>
+                  <a href="#" class="header-link">
+                     <p>Работы</p>
+                  </a>
+                  <a href="#" class="header-link">
+                     <p>Кто ты?</p>
+                  </a>
+                  <a href="#" class="header-link js-wanna-disco">
+                     <p>Хочу дискотеку</p>
+                  </a>
+               </div>
+            </header>
+            <!-- <div class="center"> -->
+            <!-- <h1 class="center__text glitch is-glitching" data-text="привет">привет</h1> -->
+            <!-- </div>  -->
+            <h2 class="theme-header">Привет, о чём поговорим сегодня?</h2>
+            <div class="themes-container">
+               <h2 class="theme-to-talk do-not-know">Я не знаю</h2>
+               <!-- <div class="upper-group theme-group"> -->
+               <!-- <h2 class="theme-to-talk life">Жизнь</h2> -->
+               <!-- <h2 class="theme-to-talk love">Любовь</h2> -->
+               <!-- </div> -->
+               <!-- <div class="lower-group theme-group"> -->
+               <!-- <h2 class="theme-to-talk art">Искусство</h2> -->
+               <!-- <h2 class="theme-to-talk war">Война</h2> -->
+               <!-- </div> -->
+            </div>
+         </div>
+      </div>
+
+      <div class="are-you-sure hidden">
+          <h1 class="upper sure-center">Вы уверены?</h1>
+          <h1 class="middle sure-center">Световые эффекты могут спровоцировать 
+              приступ эпилепсии. Перед включением диско-режима рекомендуем 
+              проконсультироваться со специалистом</h1>
+          <div class="lower sure-center">
+            <button>Уверен(а)</button>
+            <button>Хочу обратно...</button>
+          </div>
+      </div>
+      
+      <script src="script.js"></script>
+      <script src="disco.js"></script>
+   </body>
 </html>

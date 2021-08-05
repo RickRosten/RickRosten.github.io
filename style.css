@@ -1,0 +1,290 @@
+html, 
+body {
+    margin: 0;
+}
+
+body {
+  background-color: rgb(226, 199, 164);
+}
+
+.container {
+    width: 100%;
+}
+
+
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgba(255, 255, 255, 0.212) solid 2px;
+}
+
+.logo-text {
+    display: flex;
+    margin-left: 30px;
+    height: 100%;
+}
+
+.logo-text div {
+    margin: auto;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 66px;
+    margin-left: 30px;
+    color: white;
+}
+
+.logo-text img {
+    height: 100px;
+    width: auto;
+    margin: auto;
+}
+
+.audio {
+  margin: auto;
+  display: none;
+}
+
+audio {
+  color: yellow;
+}
+
+.audio-button {
+  margin: auto;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.audio-button img {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.header-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Rubik Mono One', sans-serif;
+    display: flex;
+    width: 100%; 
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    margin-left: 1px;
+    transition-duration: .4s;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.header-link:hover {
+    background-color: rgba(255, 255, 255, 0.185);
+    color: rgb(255, 0, 0);
+}
+
+.header-link p {
+    margin: auto;
+}
+
+.image {
+    background: url(images/image.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.theme-header {
+  text-align: center;
+  color: white;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 40px;
+}
+
+.themes-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.theme-group {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.theme-to-talk {
+  color: white;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 40px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+.life:hover {
+  color: rgb(0, 255, 136);
+}
+
+.love:hover {
+  color: rgb(145, 0, 0);
+}
+
+.art:hover {
+  color: rgb(255, 251, 0);
+}
+
+.war:hover {
+  color: #738595;
+}
+
+.do-not-know {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.do-not-know:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.are-you-sure {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sure-center {
+  margin: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.middle {
+  width: 50%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* эффект глитча (украл)*/
+
+.center {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: black;
+  background-image: url(https://images.unsplash.com/photo-1446080501695-8e929f879f2b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=34658e73aff775c8d4eec54bbfd1c011);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  */
+}
+
+.center__text {
+  margin: auto;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120px;
+  text-transform: uppercase;
+  cursor: default; 
+}
+.glitch {
+  position: relative;
+  color: white;
+  mix-blend-mode: lighten;
+}
+.glitch:before, .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: black;
+  clip: rect(0, 0, 0, 0);
+}
+.glitch:before {
+  left: -1px;
+  text-shadow: 1px 0 rgba(255, 0, 0, 0.7);
+}
+.glitch:after {
+  left: 1px;
+  text-shadow: -1px 0 rgba(0, 0, 255, 0.7);
+}
+.glitch:before {                                                                                    /*убрал hover между ними*/
+  text-shadow: 4px 0 rgba(255, 0, 0, 0.7);
+  animation: glitch-loop-1 2s infinite ease-in-out alternate-reverse;
+}
+.glitch:after {                                                                                     /*убрал hover между ними*/
+  text-shadow: -5px 0 rgba(0, 0, 255, 0.7);
+  animation: glitch-loop-2 2s infinite ease-in-out alternate-reverse;
+}
+@keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(25px, 9999px, 99px, 0);
+  }
+  50% {
+    clip: rect(50px, 9999px, 102px, 0);
+  }
+  75% {
+    clip: rect(30px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 98px, 0);
+  }
+}
+@keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0);
+  }
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0);
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0);
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0);
+  }
+}
