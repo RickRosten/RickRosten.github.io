@@ -25,9 +25,11 @@ discoBtn.addEventListener('click', () => {
 
 discoGoBack.addEventListener('click', () => {
     warning.classList.add('hidden');
-})
+});
 
 discoSure.addEventListener('click', () => {
     warning.classList.add('hidden');
-    disco()
-})
+    disco();
+    discoBtn.innerHTML = "хватит!";
+
+});
