@@ -15,7 +15,19 @@ function disco() {
 
 // модалка с предупреждением
 let warning = document.querySelector('.are-you-sure');
-let discoBtn = document.querySelector('.js-wanna-disco')
+let discoBtn = document.querySelector('.js-wanna-disco');
+let discoGoBack = document.querySelector('.js-want-go-back');
+let discoSure = document.querySelector('.js-im-sure');
+
 discoBtn.addEventListener('click', () => { 
-    warning.classList.remove('hidden')
+    warning.classList.remove('hidden');
 });
+
+discoGoBack.addEventListener('click', () => {
+    warning.classList.add('hidden');
+})
+
+discoSure.addEventListener('click', () => {
+    warning.classList.add('hidden');
+    disco()
+})
